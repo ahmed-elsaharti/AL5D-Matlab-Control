@@ -11,5 +11,5 @@ MATLAB functions to control the Lynxmotion AL5D (SSC-32U Board) robot and take i
 For an example on how to use functions, see example.m
 
 1. Use the initialize function (InitializeRobot.m) to set the COM port and create the serial object before using the other functions.
-2. Use moveRobot and readRobot to move servos particupar positions and to read signal off one of the input channels (these require the serial object created by InitializeRobot as an input argument).
+2. Use moveRobot and readRobot to move servos to particular positions and to read signal off one of the input channels (these require the serial object created by InitializeRobot as an input argument).
 3. Always clear the serial object at the end of the script (see example.m)
