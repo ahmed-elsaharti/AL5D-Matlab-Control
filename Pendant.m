@@ -36,15 +36,15 @@ switch value
             moveRobot(robot,0,Servo0,1000)
         end
     case 97
-        if Servo0<=2450
+        if Servo0<=2495
             disp('Servo 0 +')
-            Servo0=Servo0+50;
+            Servo0=Servo0+5;
             moveRobot(robot,0,Servo0,1000)
         end
     case 122
-        if Servo0>=550
+        if Servo0>=505
             disp('Servo 0 -')
-            Servo0=Servo0-50;
+            Servo0=Servo0-5;
             moveRobot(robot,0,Servo0,1000)
         end
     case 50
@@ -60,15 +60,15 @@ switch value
             moveRobot(robot,1,Servo1,1000)
         end
     case 115
-        if Servo1<=2450
+        if Servo1<=2495
             disp('Servo 1 +')
-            Servo1=Servo1+50;
+            Servo1=Servo1+5;
             moveRobot(robot,1,Servo1,1000)
         end
     case 120
-        if Servo1>=550
+        if Servo1>=505
             disp('Servo 1 -')
-            Servo1=Servo1-50;
+            Servo1=Servo1-5;
             moveRobot(robot,1,Servo1,1000)
         end
     case 51
@@ -84,15 +84,15 @@ switch value
             moveRobot(robot,2,Servo2,1000)
         end
     case 100
-        if Servo2<=2450
+        if Servo2<=2495
             disp('Servo 2 +')
-            Servo2=Servo2+50;
+            Servo2=Servo2+5;
             moveRobot(robot,2,Servo2,1000)
         end
     case 99
-        if Servo2>=550
+        if Servo2>=505
             disp('Servo 2 -')
-            Servo2=Servo2-50;
+            Servo2=Servo2-5;
             moveRobot(robot,2,Servo2,1000)
         end
     case 52
@@ -108,15 +108,15 @@ switch value
             moveRobot(robot,3,Servo3,1000)
         end
     case 102
-        if Servo3<=2450
+        if Servo3<=2495
             disp('Servo 3 +')
-            Servo3=Servo3+50;
+            Servo3=Servo3+5;
             moveRobot(robot,3,Servo3,1000)
         end
     case 118
-        if Servo3>=550
+        if Servo3>=505
             disp('Servo 3 -')
-            Servo3=Servo3-50;
+            Servo3=Servo3-5;
             moveRobot(robot,3,Servo3,1000)
         end
     case 53
@@ -132,15 +132,15 @@ switch value
             moveRobot(robot,4,Servo4,1000)
         end
     case 103
-        if Servo4<=2450
+        if Servo4<=2495
             disp('Servo 4 +')
-            Servo4=Servo4+50;
+            Servo4=Servo4+5;
             moveRobot(robot,4,Servo4,1000)
         end
     case 98
-        if Servo4>=550
+        if Servo4>=505
             disp('Servo 4 -')
-            Servo4=Servo4-50;
+            Servo4=Servo4-5;
             moveRobot(robot,4,Servo4,1000)
         end
     case 54
@@ -156,15 +156,15 @@ switch value
             moveRobot(robot,5,Servo5,1000)
         end
     case 104
-        if Servo5<=2450
+        if Servo5<=2495
             disp('Servo 5 +')
-            Servo5=Servo5+50;
+            Servo5=Servo5+5;
             moveRobot(robot,5,Servo5,1000)
         end
     case 110
-        if Servo5>=550
+        if Servo5>=505
             disp('Servo 5 -')
-            Servo5=Servo5-50;
+            Servo5=Servo5-5;
             moveRobot(robot,5,Servo5,1000)
         end
     case 13
