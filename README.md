@@ -14,3 +14,5 @@ For an example on how to use functions, see example.m
 2. Use moveRobot and readRobot to move servos to particular positions and to read signal off one of the input channels (these require the serial object created by InitializeRobot as an input argument).
 3. Always clear the serial object at the end of the script (see example.m)
 4. A pendant script has been added.
+5. Use moveRobotWait if you want MATLAB to wait untill the current motion is complete before proceeding further. (see example2.m)
+
