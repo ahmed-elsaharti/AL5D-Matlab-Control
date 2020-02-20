@@ -1,3 +1,5 @@
+% Initialize robot, create robot object (to be used later) and select COM port
+% Expected input argument is a string with the COM port that the robot uses
 robot=InitializeRobot("COM6");
 disp(['Moving....'])
 
