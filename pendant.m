@@ -15,7 +15,7 @@ Servo3=1500;
 Servo4=1500;
 Servo5=1500;
 figure('Name','Pendant','NumberTitle','off');
-text="Keep this window in focus and use the following keyboard keys:"+newline+newline+"Servo 0 : 1 = Course increment, Q = Course decrement"+newline+"Servo 1 : 2 = Course increment, W = Course decrement"+newline+"Servo 2 : 3 = Course increment, E = Course decrement"+newline+"Servo 3 : 4 = Course increment, R = Course decrement"+newline+"Servo 4 : 5 = Course increment, T = Course decrement"+newline+"Servo 5 : 6 = Course increment, Y = Course decrement"+newline+"A,S,D,F,G,H = Fine increment for corresponding servos"+newline+"Z,X,C,V,B,N = Fine decrement for corresponding servos"+newline+"Print current servo states : Enter"+newline+"Quit : /";
+text="Keep this window in focus and use the following keyboard keys:"+newline+newline+"Servo 0 : 1 = Coarse increment, Q = Coarse decrement"+newline+"Servo 1 : 2 = Coarse increment, W = Coarse decrement"+newline+"Servo 2 : 3 = Coarse increment, E = Coarse decrement"+newline+"Servo 3 : 4 = Coarse increment, R = Coarse decrement"+newline+"Servo 4 : 5 = Coarse increment, T = Coarse decrement"+newline+"Servo 5 : 6 = Coarse increment, Y = Coarse decrement"+newline+"A,S,D,F,G,H = Fine increment for corresponding servos"+newline+"Z,X,C,V,B,N = Fine decrement for corresponding servos"+newline+"Print current servo states : Enter"+newline+"Quit : /";
 annotation('textbox',  [0 0 1 1], 'string', text,'VerticalAlignment','middle','HorizontalAlignment','center')
 run=1;
 while run==1
