@@ -36,7 +36,7 @@ pause
 disp('Motion started...')
 r.moveWait(4,1500,200)
 disp('First motion complete, second motion starting...')
-r.moveWait(3,1000,200)
+r.moveWait(3,1500,200)
 disp('You will see this when both motions are complete...')
 % Note that if you do not pass a speed value the default value is set to
 % 750:
