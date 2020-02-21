@@ -1,6 +1,7 @@
 # AL5D-Matlab-Control
 A MATLAB class + methods to control the Lynxmotion AL5D (SSC-32U Board) robot and take input readings from the control board
 
+> ## Note: If you are using a MATLAB version lower than 2019b, consider using the code from the 2017a Compatible branch (https://github.com/ahmed-elsaharti/AL5D-Matlab-Control/tree/2017a-Compatible)
 
 <p align="center">
 <img src="https://www.robotshop.com/media/catalog/product/cache/image/1350x/9df78eab33525d08d6e5fb8d27136e95/l/y/lynxmotion-al5d-pltw-robotic-arm-kit-w-flowarm-pltw-app.jpg" width=50% align="center">
