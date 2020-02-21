@@ -115,6 +115,12 @@ Enter COMport in quotes (Ex: "COM4")
 ```
 Enter the port in quotes and press **Enter**.
 
+> You can use 
+> ```Matlab
+> seriallist()
+> ```
+> to find the COM port
+
 You will then see the following figure:
 <p align="center">
 <img src="https://i.imgur.com/FP8GbFy.png" width=50% align="center">
