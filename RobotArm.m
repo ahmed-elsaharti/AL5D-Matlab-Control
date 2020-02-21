@@ -7,16 +7,17 @@ classdef RobotArm
        
 	function obj = RobotArm(comport)
         if ~exist('comport','var')
-            comport=serialportlist("available");
+            comport=seriallist();
             if isempty(comport)
                 error('No COM ports available')
             end
             comport=comport(1);
         end
         obj.Port = comport;
-        obj.SerialObj = serialport(obj.Port,9600);
-        configureTerminator(obj.SerialObj,'CR');
-        writeline(obj.SerialObj,"#0P1500#1P1500#2P1500#3P1500#4P1500#5P1500")
+        obj.SerialObj = serial(char(comport),'BaudRate',9600,'Terminator','CR')
+        fopen(obj.SerialObj)
+        fprintf(obj.SerialObj,"#0P1500#1P1500#2P1500#3P1500#4P1500#5P1500")
+        fclose(obj.SerialObj)
 	end
        
     function [] = move(obj,channel,position,speed)
@@ -31,7 +32,9 @@ classdef RobotArm
         %Creating output message
         message="#"+channel+"P"+position+"S"+speed;
         %Writing message to serial
-        writeline(obj.SerialObj,message)
+        fopen(obj.SerialObj)
+        fprintf(obj.SerialObj,message)
+        fclose(obj.SerialObj)        
     end
     
     function [data] = read(obj,inputchannel)
@@ -39,10 +42,12 @@ classdef RobotArm
             error('no input channel')
         end
         message="V"+inputchannel;
-        writeline(obj.SerialObj,message);
-        data = read(obj.SerialObj,1,"uint8");
-        writeline(obj.SerialObj,message);
-        data = read(obj.SerialObj,1,"uint8");
+        fopen(obj.SerialObj)
+        fprintf(obj.SerialObj,message);
+        data = fread(obj.SerialObj,1);
+        fprintf(obj.SerialObj,message);
+        data = fread(obj.SerialObj,1);
+        fclose(obj.SerialObj)
     end
 
     function [] = moveWait(obj,channel,position,speed)
@@ -57,12 +62,15 @@ classdef RobotArm
         %Creating output message
         message="#"+channel+"P"+position+"S"+speed;
         %Writing message to serial
-        writeline(obj.SerialObj,message)
+        fopen(obj.SerialObj)
+        fprintf(obj.SerialObj,message);
         data='+';
         while data=='+'
-            writeline(obj.SerialObj,"Q");
-            data = read(obj.SerialObj,1,"char");
+            fprintf(obj.SerialObj,"Q");
+            data = fread(obj.SerialObj,1);
+            data=char(data);
         end
+        fclose(obj.SerialObj)
     end
    end
 end
