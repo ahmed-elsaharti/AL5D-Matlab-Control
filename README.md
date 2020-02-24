@@ -27,6 +27,8 @@ r = RobotArm(COMPORT)
 ```
 Will initialize the serial object by specifying the COM port **COMPORT** and will move all the servos to their center positions. (r is an example variable)
 
+> **NOTE: RobotArm is case sensitive**
+
 If you do not know what COM port the robot is connected to don't pass any input arguments as follows and the program will connect to the first available port:
 
 ```Matlab
