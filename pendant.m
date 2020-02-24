@@ -169,12 +169,7 @@ switch value
         end
     case 13
         disp("----------------------------")
-        disp("robot.move(0,"+Servo0+")")
-        disp("robot.move(1,"+Servo1+")")
-        disp("robot.move(2,"+Servo2+")")
-        disp("robot.move(3,"+Servo3+")")
-        disp("robot.move(4,"+Servo4+")")
-        disp("robot.move(5,"+Servo5+")")
+        disp("robot.move([0 1 2 3 4 5],["+Servo0+" "+Servo1+" "+Servo2+" "+Servo3+" "+Servo4+" "+Servo5+"])")
     case 47
         disp('Exiting')
         run=0;
