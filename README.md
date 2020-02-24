@@ -79,6 +79,35 @@ The program will halt at the second line untill the motion is complete. Only whe
 
 > Note that similar to the *move()* method if you do not pass a speed value the default value is set to 750
 
+## 2c. Group movement
+
+**Both** these functions also accept input matrices containing multiple input channels, their corresponding positions and speeds.
+
+### Example:
+```Matlab
+r.move([3 4 5],[1000 1000 1200],[200 100 250])
+```
+Running this command will move servos 3, 4 and 5 to positions 1000, 1000 and 1200 at speeds 200, 100 and 250
+
+> Also works with the *moveWait()* method
+
+The speed can be a matrix with corresponding speeds for each of the specified channels or a single global speed that is to be used fo all the channels specified.
+
+### Example:
+```Matlab
+r.move([3 4 5],[1000 1000 1200],200)
+```
+Running this command will move servos 3, 4 and 5 to positions 1000, 1000 and 1200 at a global speed of 200 for all of them.
+
+> Also works with the *moveWait()* method
+
+> Note that, as mentioned earlier, if you do not pass a speed value the default value is set to a global default of 750
+> ### Example:
+> ```Matlab
+> r.move([3 4 5],[1000 1000 1200])
+> ```
+> Running this command will move servos 3, 4 and 5 to positions 1000, 1000 and 1200 at a global default speed of 750 for all of them.
+
 ## 3. Reading input channels
 
 ```Matlab
