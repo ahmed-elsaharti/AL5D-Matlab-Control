@@ -169,11 +169,6 @@ With the figure window in focus you can control the robot using your keyboard (s
 
 This is an example of the printed list of servo positions:
 ```Matlab
-robot.move(1,1500)
-robot.move(2,1200)
-robot.move(3,1540)
-robot.move(4,600)
-robot.move(5,1400)
-robot.move(6,2400)
+robot.move([0 1 2 3 4 5],[1500 1200 1540 600 1400 2400)
 ```
 > Note: Press the **/** button (with the window in focus) to exit 
