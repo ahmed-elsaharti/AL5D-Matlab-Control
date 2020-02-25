@@ -8,6 +8,8 @@ A MATLAB class + methods to control the Lynxmotion AL5D (SSC-32U Board) robot an
 <img src="https://www.robotshop.com/media/catalog/product/cache/image/1350x/9df78eab33525d08d6e5fb8d27136e95/l/y/lynxmotion-al5d-pltw-robotic-arm-kit-w-flowarm-pltw-app.jpg" width=50% align="center">
 </p>
 
+> **For questions on usage, feel free to contact me at ahmed.elsaharti@und.edu**
+
 (See https://www.robotshop.com/media/files/pdf2/lynxmotion_ssc-32u_usb_user_guide.pdf to know which are the input channel pins and which are servo channel pins)
 
 # Description
