@@ -220,5 +220,5 @@ Enter COMport in quotes (Ex: "COM4")
 ```Matlab
 robot.move([0 1 2 3 4 5],[1500 1200 1540 600 1400 2400])
 ```
-> ~~Note: Press the **/** button (with the window in focus) to exit ~~
+> ~~Note: Press the **/** button (with the window in focus) to exit~~
 
